@@ -1,0 +1,14 @@
+{ 
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Resources" : {
+        "HelloBucket" : {
+            "Type" : "AWS::S3::Bucket"
+        }
+    },
+    "Outputs" : {
+        "HelloBucketDomain" : {
+            "Description" : "The Domain of the bucket",
+            "Value" : "!Ref HelloBucket.DomainName"
+        }
+    }
+}
